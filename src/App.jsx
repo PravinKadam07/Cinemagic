@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration,getGenres } from './store/homeSlice.js'
 import { useState,useEffect } from 'react'
 import { fetchDataFromApi } from "./utils/api.js"
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 import Home from"./pages/home/Home.jsx"
 import Header from "./components/header/Header.jsx"
@@ -34,10 +35,18 @@ const apiTesting=(req,res)=>{
 )}
 
   return (
-    <>
-     App
-    
-    </>
+   <BrowserRouter>
+   <Header/>
+   <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/:mediaTyle/:id' element={<Details/>}/>
+    <Route path='/search/:query' element={<SearchResult/>}/>
+    <Route path='/explore/:mediatype' element={<Explore/>}/>
+    <Route path='*' element={<PageNotFound/>}/>
+    <Route/>
+   </Routes>
+   <Footer/>
+   </BrowserRouter>
   )
 }
 
