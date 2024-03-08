@@ -38,7 +38,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <Header/> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:mediaTyle/:id" element={<Details />} />
@@ -47,7 +47,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         <Route />
       </Routes>
-      {/* <Footer/> */}
+      <Footer />
     </BrowserRouter>
   );
 }
