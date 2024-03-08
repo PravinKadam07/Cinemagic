@@ -18,7 +18,6 @@ function App() {
   const { url } = useSelector((state) => {
     return state.home;
   });
-  console.log(url);
 
   useEffect(() => {
     fetchApiConfig();
