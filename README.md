@@ -17,9 +17,8 @@
 - React.js
 - TMDB API
 
-## How to Use
+## Deployment
 
-1. Clone the repository:
+- This project is deployed on Vercel. You can access it here. https://movix-sigma-two.vercel.app/explore/movie
 
-```bash
-git clone https://github.com/yourusername/movix.git
+
