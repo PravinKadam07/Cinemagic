@@ -10,7 +10,7 @@ import Img from "../lazyLoadImage/Img";
 import CircleRating from "../circleRating/CricleRating";
 import Genres from "../genres/Genres";
 
-const MovieCard = ({ data, fromSearch, mediaType }) => {
+const MovieCard = ({ data, fromSearch, mediatype }) => {
   const { url } = useSelector((state) => state.home);
   const navigate = useNavigate();
   const posterUrl = data.poster_path
@@ -19,7 +19,7 @@ const MovieCard = ({ data, fromSearch, mediaType }) => {
   return (
     <div
       className="movieCard"
-      onClick={() => navigate(`/${data.media_type || mediaType}/${data.id}`)}
+      onClick={() => navigate(`/${data.media_type || mediatype}/${data.id}`)}
     >
       <div className="posterBlock">
         <Img className="posterImg" src={posterUrl} />

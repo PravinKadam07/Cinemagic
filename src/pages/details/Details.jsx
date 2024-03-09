@@ -5,10 +5,10 @@ import useFetch from "../../hooks/useFetch";
 import DetailsBanner from "./detailsBanner/DetailsBanner";
 import Cast from "../../pages/details/cast/Cast.jsx";
 const Details = () => {
-  const { mediaType, id } = useParams();
-  const { data, loading } = useFetch(`/${mediaType}/${id}/videos`);
+  const { mediatype, id } = useParams();
+  const { data, loading } = useFetch(`/${mediatype}/${id}/videos`);
   const { data: credits, loading: creditsLoading } = useFetch(
-    `/${mediaType}/${id}/credits`
+    `/${mediatype}/${id}/credits`
   );
   return (
     <div>
