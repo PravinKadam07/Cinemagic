@@ -22,4 +22,5 @@
 - This project is deployed on Vercel. You can access it here. 
 
 ## Project Link
--https://movix-sigma-two.vercel.app/explore/movie
+[Visit Movix](https://movix-sigma-two.vercel.app/)
+
